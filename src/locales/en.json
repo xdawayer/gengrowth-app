@@ -1,0 +1,860 @@
+{
+  "common": {
+    "dashboard": "Dashboard",
+    "products": "Products",
+    "connections": "Connections",
+    "discovery": "Discovery",
+    "strategy": "Strategy",
+    "backlog": "Backlog",
+    "execution": "Execution",
+    "measurement": "Measurement",
+    "optimization": "Optimization",
+    "governance": "Governance",
+    "playbook": "Playbook",
+    "outreach": "Link Outreach",
+    "integrations": "Integrations",
+    "publish_queue": "Publish Queue",
+    "compliance": "Compliance",
+    "data_integrity": "Data Integrity",
+    "legal_center": "Legal Center",
+    "consent_center": "Consent Center",
+    "settings": "Settings",
+    "new_product": "New Product",
+    "cancel": "Cancel",
+    "continue": "Continue",
+    "back": "Back",
+    "create": "Create Product",
+    "loading": "Loading...",
+    "closing_soon": "Returning to list...",
+    "under_construction": "Under Construction",
+    "coming_soon": "The {{tab}} module is coming soon in the next MVP sprint.",
+    "groups": {
+      "overview": "Overview",
+      "product": "Product",
+      "growth_engine": "Growth Engine",
+      "measurement": "Measurement",
+      "governance": "Governance",
+      "channels": "Channels",
+      "compliance": "Compliance",
+      "legal": "Legal"
+    }
+  },
+  "connections": {
+    "title": "Data Connections",
+    "subtitle": "Manage data sources for {{product}}",
+    "add_connection": "Add Connection",
+    "authenticating": "Authenticating...",
+    "last_sync": "Last Sync",
+    "healthy": "Healthy",
+    "action_required": "Action Required",
+    "error": "Error",
+    "settings": "Settings",
+    "disconnect": "Disconnect",
+    "integrity_check": "Data Integrity Check",
+    "run_check": "Run Check",
+    "running_check": "Running Check...",
+    "api_status": "API Status",
+    "data_latency": "Data Latency",
+    "integrity_rate": "Integrity Rate",
+    "attribution": "Attribution",
+    "alive": "Alive",
+    "available": "Available",
+    "unavailable": "Unavailable",
+    "connection_error": "Connection Error",
+    "oauth_expired_desc": "The OAuth token has expired. Please re-authenticate to restore data flow.",
+    "fix_now": "Fix Now",
+    "disconnect_dialog": {
+      "title": "Disconnect Source",
+      "description": "Are you sure you want to disconnect {{source}}? This will stop data synchronization for this product.",
+      "confirm": "Disconnect"
+    },
+    "wizard": {
+      "title": "Add New Connection",
+      "step_1": "Select Data Source",
+      "step_2": "OAuth Authorization",
+      "step_3": "Verify Connection",
+      "gsc_desc": "Search performance (impressions, clicks, queries, landing pages)",
+      "ga4_desc": "On-site events, user behavior, conversion data",
+      "authorize": "Authorize with Google",
+      "verifying": "Verifying connection...",
+      "success": "Connection Successful",
+      "success_desc": "Data flow has been established and initial sync is starting.",
+      "failure": "Connection Failed",
+      "failure_desc": "We couldn't establish a connection to the data source. Please check your credentials and try again.",
+      "retry": "Try Again"
+    },
+    "fix_suggestions": {
+      "title": "Fix Suggestions",
+      "step_1": "Check Google Cloud Project permissions",
+      "step_2": "Verify OAuth Redirect URIs",
+      "step_3": "Re-authenticate using the button below"
+    }
+  },
+  "dashboard": {
+    "active_products": "Active Products",
+    "pending_strategies": "Pending Strategies",
+    "completed_executions": "Completed Executions",
+    "total_opportunities": "Total Opportunities",
+    "recent_decisions": "Recent Decisions",
+    "risk_alerts": "Risk Alerts",
+    "view_all": "View All",
+    "trends": {
+      "this_week": "+2 this week",
+      "growth": "+12%"
+    },
+    "title": "Dashboard",
+    "subtitle": "Global view of your growth engine",
+    "refresh_data": "Refresh Data",
+    "approved_strategies": "Approved Strategies",
+    "active_strategies": "Active Strategies",
+    "performance_overview": "Performance Overview",
+    "last_3_months": "Last 3 months",
+    "automated_decisions": "Automated Decisions",
+    "optimization_center": "Optimization Center",
+    "portfolio_health": "Portfolio Health",
+    "columns": {
+      "strategy_name": "Strategy Name",
+      "score": "Score",
+      "status": "Status",
+      "last_decision": "Last Decision"
+    },
+    "alerts": {
+      "alert1": {
+        "title": "Data Connection Failure",
+        "description": "Product \"AstroGrowth\" lost connection to Google Search Console.",
+        "action": "Fix Connection"
+      },
+      "alert2": {
+        "title": "Compliance Warning",
+        "description": "3 outreach links pending legal review for GDPR compliance.",
+        "action": "Review Links"
+      },
+      "alert3": {
+        "title": "New Opportunity Detected",
+        "description": "AI found a high-potential keyword gap for \"zodiac compatibility\".",
+        "action": "View Opportunity"
+      }
+    },
+    "strategies": {
+      "strat1": {
+        "name": "SEO Content Expansion",
+        "decision": "Expand"
+      },
+      "strat2": {
+        "name": "Backlink Outreach",
+        "decision": "Iterate"
+      },
+      "strat3": {
+        "name": "Technical Debt Cleanup",
+        "decision": "Pause"
+      },
+      "strat4": {
+        "name": "Social Signal Boost",
+        "decision": "Fix"
+      }
+    },
+    "decisions": {
+      "dec1": {
+        "label": "Budget Expanded",
+        "description": "Increased budget for high-performing SEO content by 20%."
+      },
+      "dec2": {
+        "label": "Strategy Iterated",
+        "description": "Updated keywords for Backlink Outreach based on new discovery data."
+      },
+      "dec3": {
+        "label": "Execution Paused",
+        "description": "Paused Technical Debt Cleanup due to high error rate in deployment."
+      }
+    }
+  },
+  "products": {
+    "title": "Products",
+    "subtitle": "Manage your growth experiments and data sources.",
+    "no_products": "No products yet. Start by adding your first one.",
+    "search_placeholder": "Search products by name or URL...",
+    "connections": "Connections",
+    "add_product": "Add Product",
+    "delete_title": "Delete Product",
+    "delete_desc": "Are you sure you want to delete this product? This action will archive the product and stop all active strategies. This cannot be undone.",
+    "delete_confirm": "Delete Product",
+    "clone_template": "Clone Template",
+    "edit_config": "Edit Config",
+    "input_profile": "Input Profile",
+    "target_regions": "Target Regions",
+    "experiment_goal": "Experiment Goal",
+    "conversion_event": "Conversion Event",
+    "language_override": "Language Override",
+    "production_cap": "Production Cap",
+    "brand_safety": "Brand Safety",
+    "auto_detect": "Auto-Detect",
+    "auto": "Auto",
+    "pages_week": "pages/week",
+    "default_policy": "Default Policy",
+    "site_probe_results": "Site Auto-Probe Results",
+    "connection_status": "Connection Status",
+    "probe_summary": "Probe Summary",
+    "completion_rate": "Completion Rate",
+    "probe_desc": "Site structure identified as E-commerce / SaaS Hybrid. Detected {{count}} distinct page templates.",
+    "modal": {
+      "title_step_1_4": "Connect New Product",
+      "title_step_5": "Site Auto-Probe",
+      "title_step_6": "Probe Results",
+      "subtitle_step_1_4": "Step {{step}} of 4 • Input Profile",
+      "subtitle_step_5": "Analyzing Site Structure",
+      "subtitle_step_6": "Review & Confirm",
+      "name_label": "Product Name",
+      "name_placeholder": "e.g. My SaaS Product",
+      "url_label": "Product URL",
+      "url_placeholder": "https://example.com",
+      "regions_label": "Target Regions",
+      "goal_label": "Experiment Goal",
+      "event_label": "Primary Conversion Event",
+      "probing_title": "Probing Site Structure...",
+      "probing_desc": "We're automatically detecting your sitemap, robots.txt, and page templates to build your growth model.",
+      "reading_robots": "Reading robots.txt...",
+      "sitemap_found": "Sitemap found: /sitemap.xml",
+      "identifying_pages": "Identifying page templates...",
+      "probe_success": "Probe Completed Successfully",
+      "probe_success_desc": "Detected English language, 124 pages, and 3 main templates (Product, Blog, Docs).",
+      "optional_overrides": "Optional Overrides",
+      "language": "Language",
+      "production_cap": "Production Cap",
+      "brand_safety_policy": "Brand Safety Policy",
+      "brand_safety_placeholder": "Default policy applied...",
+      "cancel": "Cancel",
+      "back": "Back",
+      "continue": "Continue",
+      "start_probe": "Start Probe",
+      "confirm_connect": "Confirm & Connect",
+      "auto_detect_en": "Auto-Detect (EN)",
+      "english": "English",
+      "chinese": "Chinese",
+      "spanish": "Spanish"
+    },
+    "columns": {
+      "product_name": "Product Name",
+      "status": "Status",
+      "connections": "Connections",
+      "created": "Created"
+    },
+    "details": {
+      "probe_steps": {
+        "sitemap_label": "Sitemap Discovery",
+        "sitemap_found": "Found",
+        "sitemap_not_found": "Not Found",
+        "sitemap_desc": "Checking for /sitemap.xml and robots.txt references.",
+        "page_type_label": "Page Type Identification",
+        "page_type_desc": "Analyzing DOM structure to identify product, category, and blog pages.",
+        "language_label": "Language Detection",
+        "language_unknown": "Unknown",
+        "language_desc": "Detected primary content language via meta tags and NLP."
+      }
+    },
+    "actions": {
+      "add_product": "Add Product",
+      "view_details": "View Details",
+      "copy_template": "Copy Template",
+      "delete_product": "Delete Product"
+    },
+    "delete_dialog": {
+      "title": "Delete Product",
+      "description": "Are you sure you want to delete this product? This action will archive the product and stop all active strategies. This cannot be undone.",
+      "confirm": "Delete Product"
+    }
+  },
+  "playbook": {
+    "title": "Playbook & Patterns",
+    "subtitle": "Validated SEO strategies and anti-patterns",
+    "filter": "Advanced Filter",
+    "search": "Search playbook...",
+    "tabs": {
+      "all": "All Patterns",
+      "success": "Success Patterns",
+      "failure": "Anti-Patterns"
+    },
+    "steps": "Steps",
+    "effect": "Effect",
+    "scope": "Scope",
+    "source": "Source Strategy",
+    "reuse": "Reuse Pattern",
+    "mark_anti": "Mark as Anti-Pattern",
+    "types": {
+      "success_pattern": "Success Pattern",
+      "failure_pattern": "Failure Pattern"
+    }
+  },
+  "outreach": {
+    "title": "Link Outreach",
+    "subtitle": "Manage backlink candidates, outreach tasks, and link monitoring",
+    "manual_check": "Manual Check",
+    "batch_verify": "Batch Verify",
+    "warning": "Strictly adhere to search engine spam policies. High-risk bulk link building is prohibited. High-risk candidates are automatically downgraded or blocked. Outreach drafts must not promise link exchanges or paid links.",
+    "tabs": {
+      "candidates": "Candidate Pool",
+      "tasks": "Outreach Tasks",
+      "monitoring": "Link Monitoring",
+      "lost_alerts": "Lost Alerts"
+    },
+    "table": {
+      "domain_type": "Domain / Type",
+      "relevance": "Relevance",
+      "quality": "Quality",
+      "spam_risk": "Spam Risk",
+      "pos_score": "Position Score",
+      "stability": "Stability",
+      "suggested_action": "Suggested Action",
+      "actions": "Actions",
+      "candidate": "Candidate",
+      "method": "Method",
+      "exchange": "Exchange",
+      "mark_sent": "Mark Sent",
+      "draft": "Generate Draft",
+      "domain_target": "Domain / Target URL",
+      "status": "Status",
+      "indexable": "Indexable",
+      "rel_attr": "Rel Attribute",
+      "anchor_text": "Anchor Text",
+      "last_checked": "Last Checked",
+      "live": "Live",
+      "lost": "Lost",
+      "crawlable": "Crawlable",
+      "target_indexable": "Target Indexable",
+      "view_details": "View Details",
+      "draft_content": "Draft Content",
+      "reason": "Reason",
+      "verify": "Verify",
+      "target_url": "Target URL"
+    },
+    "actions": {
+      "outreach": "Outreach",
+      "downgrade": "Downgrade",
+      "block": "Block"
+    },
+    "modal": {
+      "close": "Close",
+      "cancel": "Cancel",
+      "save_to_tasks": "Save to Tasks",
+      "subject": "Subject",
+      "message_body": "Message Body",
+      "candidate_not_found": "Candidate details not found.",
+      "draft_saved": "Draft saved to tasks!",
+      "collab_inquiry": "Collaboration Inquiry",
+      "draft_template": "Hi Team at {{domain}},\n\nI was reading your recent posts and really loved your content, especially the resource page at {{targetUrl}}.\n\nI'm reaching out from {{productName}}. We have some highly relevant resources that I believe would be a great addition to your page and provide value to your readers.\n\nWould you be open to a quick chat about a potential collaboration?\n\nBest regards,\n[Your Name]"
+    }
+  },
+  "publish_queue": {
+    "title": "Publish Queue",
+    "subtitle": "Manage and schedule content across platforms",
+    "settings": "Settings",
+    "tabs": {
+      "queue": "Queue",
+      "blocked": "Blocked",
+      "logs": "Logs"
+    },
+    "table": {
+      "content": "Content Summary",
+      "target": "Target",
+      "level_risk": "Level / Risk",
+      "schedule": "Schedule",
+      "actions": "Actions",
+      "platform": "Platform",
+      "approval": "Approval",
+      "time_hash": "Time / Hash",
+      "response": "Response"
+    },
+    "actions": {
+      "reject": "Reject",
+      "approve": "Approve",
+      "view_fix": "View & Fix"
+    },
+    "reason": "Reason"
+  },
+  "website": {
+    "title": "Website Management",
+    "subtitle": "Manage pages, navigation, and footer configuration",
+    "tabs": {
+      "pages": "Pages",
+      "navigation": "Navigation",
+      "footer": "Footer"
+    },
+    "preview": "Preview Site",
+    "pages_table": {
+      "title": "Page Title",
+      "path": "Path",
+      "type": "Type",
+      "status": "Status",
+      "last_updated": "Last Updated"
+    },
+    "nav_header": "Header Navigation",
+    "add_link": "Add Link",
+    "footer_legal": "Legal Links",
+    "footer_contact": "Contact & Social",
+    "save": "Save Changes"
+  },
+  "compliance": {
+    "title": "Compliance & Risk",
+    "subtitle": "Automated content risk checks and approvals",
+    "batch_check": "Batch Check",
+    "tabs": {
+      "overview": "Risk Overview",
+      "checklists": "Checklists",
+      "blocked": "Blocked Records"
+    },
+    "overview": {
+      "high_risk": "High Risk",
+      "high_risk_desc": "Auto-blocked. Needs Owner approval.",
+      "medium_risk": "Medium Risk",
+      "medium_risk_desc": "Alerted. Needs PM confirmation.",
+      "low_risk": "Low Risk",
+      "low_risk_desc": "Logged. No action required."
+    },
+    "table": {
+      "id_target": "ID / Target",
+      "check_type": "Check Type",
+      "risk_level": "Risk Level",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "actions": {
+      "approve": "Approve (Owner)",
+      "confirm": "Confirm (PM)",
+      "view_details": "View Details"
+    }
+  },
+  "data_integrity": {
+    "title": "Data Integrity",
+    "subtitle": "Automated acceptance of data definition, collection, delivery, and reconciliation",
+    "trigger": "Trigger Acceptance",
+    "tabs": {
+      "overview": "Overview",
+      "auto": "Auto Results",
+      "manual": "Manual Review"
+    },
+    "overview": {
+      "status_review": "Status: Review Required",
+      "status_desc": "Limited execution allowed. Auto-scaling disabled due to Pipeline warnings.",
+      "dimensions": {
+        "schema": "Schema",
+        "coverage": "Coverage",
+        "pipeline": "Pipeline",
+        "reconciliation": "Reconciliation",
+        "attribution": "Attribution",
+        "consent": "Consent"
+      }
+    },
+    "auto": {
+      "validation": "{{name}} Validation"
+    },
+    "manual": {
+      "fallback": "Pipeline Fallback",
+      "task": "Task",
+      "issue": "End-to-end delivery rate dropped below 99%",
+      "desc": "Analyst required to perform sample playback and log verification.",
+      "claim": "Claim Task (Analyst)",
+      "conditional": "Conditional Approval (PM/Owner)"
+    },
+    "status": {
+      "accept": "accept",
+      "review": "review",
+      "reject": "reject"
+    }
+  },
+  "legal_center": {
+    "title": "Legal Center",
+    "subtitle": "Manage legal documents and version history",
+    "tabs": {
+      "documents": "Documents",
+      "editor": "Editor",
+      "history": "Version History"
+    },
+    "new_doc": "New Document",
+    "table": {
+      "type": "Document Type",
+      "version": "Version",
+      "date": "Effective Date",
+      "status": "Status",
+      "actions": "Actions"
+    }
+  },
+  "consent_center": {
+    "title": "Consent Management",
+    "subtitle": "Configure cookie rules and regional policies",
+    "export": "Export Logs",
+    "rules": "Consent Rules",
+    "regions": "Regional Policies"
+  },
+  "integrations": {
+    "title": "Integrations & OAuth",
+    "subtitle": "Manage secure connections with least privilege",
+    "new_connection": "New Connection",
+    "granted_scopes": "Granted Scopes",
+    "encrypted": "Encrypted in Vault",
+    "last_used": "Last used"
+  },
+  "execution": {
+    "title": "Execution Management",
+    "subtitle": "Track SEO and Social execution progress",
+    "pause_all": "Pause All",
+    "resume_all": "Resume All",
+    "tabs": {
+      "seo": "SEO Logs",
+      "social": "Social Logs",
+      "exceptions": "Exceptions"
+    },
+    "seo_table": {
+      "task": "Task ID / Title",
+      "status": "Status",
+      "duration": "Duration",
+      "output": "Output",
+      "indexed": "Indexed",
+      "internal_links": "Internal Links",
+      "sitemap": "Sitemap",
+      "actions": "Actions"
+    },
+    "social_table": {
+      "task": "Task ID / Platform",
+      "type": "Type",
+      "status": "Status",
+      "impressions": "Impressions",
+      "clicks": "Clicks",
+      "ctr": "CTR",
+      "utm": "UTM / Signal",
+      "actions": "Actions"
+    },
+    "exceptions_table": {
+      "id": "Exception ID / Task",
+      "type": "Type",
+      "message": "Message",
+      "retries": "Retries",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "actions": {
+      "view": "View",
+      "retry": "Retry",
+      "escalate": "Escalate",
+      "resolve": "Resolve"
+    }
+  },
+  "backlog": {
+    "title": "Execution Backlog",
+    "subtitle": "Batched task queue for {{product}}",
+    "filter": "Filter",
+    "approve_batch": "Approve Current Batch",
+    "social_probe": {
+      "title": "Social-First Probing Active",
+      "status": "Monitoring",
+      "active_probes": "Active Probes",
+      "top_signal": "Top Signal (Reddit)",
+      "baseline": "Baseline",
+      "promoted": "Topic Promoted to Batch-0"
+    },
+    "batch": {
+      "highest_priority": "Highest Priority",
+      "tasks": "Tasks",
+      "priority": "Priority",
+      "dep": "Dep",
+      "expected": "Expected Output",
+      "override": "Override Priority"
+    }
+  },
+  "discovery": {
+    "title": "Opportunity Discovery",
+    "subtitle": "AI-detected growth opportunities for {{product}}",
+    "run_discovery": "Run Discovery",
+    "running_discovery": "Running Discovery...",
+    "export_csv": "Export CSV",
+    "map_overview": "Opportunity Map Overview",
+    "list_title": "Opportunity List",
+    "history_title": "Recent Discovery Runs",
+    "types": {
+      "all": "All Types",
+      "keyword": "Keyword Cluster",
+      "competitor": "Competitor Gap",
+      "content": "Content Gap",
+      "backlink": "Backlink Opportunity"
+    },
+    "priorities": {
+      "all": "All Priorities",
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "intents": {
+      "informational": "Informational",
+      "comparison": "Comparison",
+      "transactional": "Transactional",
+      "navigational": "Navigational"
+    },
+    "fields": {
+      "volume": "Volume/Scale",
+      "cpc": "Eq. CPC Savings",
+      "priority": "Priority",
+      "why": "Why this opportunity?",
+      "evidence": "Evidence Chain"
+    },
+    "actions": {
+      "create_strategy": "Create Strategy"
+    },
+    "history": {
+      "trigger": "Trigger",
+      "opps_found": "Opps Found",
+      "scheduled": "Scheduled",
+      "manual": "Manual"
+    },
+    "evidence_steps": {
+      "data_source": "Data Source",
+      "analysis": "Analysis",
+      "calculation": "Calculation"
+    },
+    "mock_data": {
+      "opp1": {
+        "title": "astrology for beginners",
+        "why": "High search volume with low keyword difficulty. Currently ranking #15, moving to top 3 could yield 15k new visitors.",
+        "ev1": "Google Search Console (last 30 days)",
+        "ev2": "Identified cluster of 12 related keywords with KD < 30",
+        "ev3": "Estimated traffic (15k) * Avg CPC ($0.08) = $1,200 value"
+      },
+      "opp2": {
+        "title": "astro-charts.com overlap",
+        "why": "Competitor is capturing traffic for \"birth chart calculator\" variations where we have no dedicated landing page.",
+        "ev1": "Ahrefs Competitor Analysis API",
+        "ev2": "Found 45 high-value keywords where competitor ranks top 5 and we rank > 50",
+        "ev3": "Projected capture of 10% of gap traffic"
+      },
+      "opp3": {
+        "title": "Zodiac Compatibility Guide",
+        "why": "Missing pillar content for a major topic cluster. High potential for internal linking and topical authority.",
+        "ev1": "Site Structure Analysis",
+        "ev2": "Competitor Content Audit",
+        "ev3": "Search Intent Mapping"
+      },
+      "opp4": {
+        "title": "Unlinked Brand Mentions",
+        "why": "High authority sites mention us but don't link. Low-hanging fruit for high-quality backlink acquisition.",
+        "ev1": "Brand Monitoring API",
+        "ev2": "Domain Authority Filtering",
+        "ev3": "Outreach Feasibility Check"
+      }
+    }
+  },
+  "strategy": {
+    "title": "Strategy Portfolio",
+    "subtitle": "AI-generated growth strategies pending approval",
+    "history": "Version History",
+    "compare": "Compare Selected",
+    "top_recommended": "Top Recommended",
+    "conflict": "Resource Conflict",
+    "score": "Score",
+    "confidence": "Confidence",
+    "target": "Target",
+    "override": "Override",
+    "approve": "Approve",
+    "approving": "Approving...",
+    "roi": "Eq. ROI (Monthly)",
+    "impact": "Impact Scope",
+    "cost": "Cost Estimate",
+    "risk": "Risk Level",
+    "breakdown": "Score Breakdown",
+    "roi_potential": "ROI Potential",
+    "hist_success": "Hist. Success",
+    "comp_gap": "Comp. Gap",
+    "tech_health": "Tech Health",
+    "risk_inv": "Risk (Inv)",
+    "why": "Why this strategy?",
+    "evidence": {
+      "discovery": "Discovery",
+      "competitor_analysis": "Competitor Analysis",
+      "resource_check": "Resource Check",
+      "roi_projection": "ROI Projection",
+      "audit": "Audit",
+      "impact_analysis": "Impact Analysis",
+      "link_intersect": "Link Intersect",
+      "prospecting": "Prospecting",
+      "ev_1_1": "Identified 120k/mo search volume gap for 'compatibility' topics.",
+      "ev_1_2": "Top 3 competitors have thin content (<800 words) on these topics.",
+      "ev_1_3": "Current team capacity allows for 5 pillar pages/week.",
+      "ev_1_4": "Estimated 15k new visitors * $0.30 CPC = $4,500/mo value.",
+      "ev_2_1": "LCP is 4.2s on mobile product pages (failing CWV).",
+      "ev_2_2": "Pages failing CWV have 15% higher bounce rate.",
+      "ev_2_3": "Improving LCP to <2.5s projected to lift CVR by 0.5%.",
+      "ev_3_1": "Found 45 domains linking to competitors but not us.",
+      "ev_3_2": "Filtered to DR 50+ sites with relevant 'tools' resource pages.",
+      "ev_3_3": "Acquiring 5 links expected to boost core rankings by 2 positions."
+    },
+    "override_reason_prompt": "Please provide a reason for overriding this strategy's priority:",
+    "override_applied": "Override applied successfully.",
+    "compare_strategies": "Select 2-3 strategies to compare.",
+    "compare_limit": "You can only compare up to 3 strategies.",
+    "view_history": "Viewing strategy portfolio history.",
+    "insufficient_candidates": "Less than 3 candidates available. Showing existing candidates.",
+    "conflict_warning": "Resource conflict detected. Please select one strategy to proceed.",
+    "approved": "Approved",
+    "names": {
+      "strat_1": "SEO Content Expansion: Zodiac Compatibility",
+      "strat_2": "Technical Debt: Core Web Vitals Optimization",
+      "strat_3": "Backlink Outreach: Astrology Tools"
+    },
+    "impacts": {
+      "imp_1": "Organic Traffic (+15%)",
+      "imp_2": "Conversion Rate (+0.5%)",
+      "imp_3": "Domain Authority (+2)",
+      "imp_4": "Brand Awareness (+10%)",
+      "imp_5": "User Retention (+5%)"
+    },
+    "conflicts": {
+      "outreach_budget": "Competes for outreach budget with Campaign B. Both require high-authority site placements."
+    },
+    "costs": {
+      "cost_1": "2 Writers, 1 Editor",
+      "cost_2": "1 Developer (2 sprints)",
+      "cost_3": "1 Outreach Specialist"
+    },
+    "risks": {
+      "Low": "Low",
+      "Medium": "Medium",
+      "High": "High"
+    },
+    "compare_title": "Strategy Comparison",
+    "close_compare": "Close"
+  },
+  "measurement": {
+    "title": "Measurement & Attribution",
+    "subtitle": "Unified attribution and experiment reviews",
+    "export": "Export Data",
+    "health": {
+      "title": "Channel Isolation Health",
+      "desc": "Monitoring UTM integrity and cross-channel conflicts",
+      "utm": "UTM Integrity",
+      "conflict": "Conflict Rate",
+      "valid": "Isolation Valid"
+    },
+    "dashboard": {
+      "channel": "Channel",
+      "content": "Content",
+      "page": "Page",
+      "last_30": "Last 30 Days",
+      "viz_title": "{{dimension}} Dimension Visualization",
+      "viz_desc": "Traffic, Conversions, and ROI breakdown"
+    },
+    "reviews": {
+      "title": "Measurement Reviews",
+      "strategy": "Strategy",
+      "confidence": "Confidence",
+      "target": "Target",
+      "actual": "Actual",
+      "utm_match": "UTM Match",
+      "postmortem": "View Postmortem",
+      "status": {
+        "achieved": "Achieved",
+        "failed": "Failed",
+        "insufficient": "Insufficient Data"
+      }
+    }
+  },
+  "optimization": {
+    "title": "Optimization Decisions",
+    "subtitle": "AI-driven strategy adjustments for {{product}}",
+    "guided_ops": {
+      "enter": "Enter Guided Ops",
+      "exit": "Exit Guided Ops",
+      "mode": "Guided Ops Mode",
+      "goal": "1. This Week's Goal",
+      "goal_value": "Maximize Organic Traffic",
+      "trajectory": "Current trajectory: +12% (Target: +15%)",
+      "actions": "2. Recommended Actions",
+      "expand": "Expand",
+      "expand_desc": "High ROI. Shift resources from STR-78.",
+      "pause": "Pause",
+      "pause_desc": "Underperforming for 2 weeks.",
+      "execute": "3. Execute & Review",
+      "one_click": "1-Click Execute",
+      "auto_postmortem": "Auto-postmortem scheduled for next cycle."
+    },
+    "decision": {
+      "override": "Override",
+      "confirm": "Confirm",
+      "current_score": "Current Score",
+      "view_trend": "View Trend",
+      "threshold": "Threshold Match",
+      "window": "Consecutive Window",
+      "reallocation": "Reallocation",
+      "reasoning": "Reasoning"
+    },
+    "types": {
+      "expand": "expand",
+      "iterate": "iterate",
+      "pause": "pause"
+    }
+  },
+  "governance": {
+    "title": "Governance Center",
+    "subtitle": "Audit logs, approvals, and intervention tracking",
+    "compare": "Version Compare",
+    "alert": {
+      "title": "Intervention Alert",
+      "desc": "3 consecutive manual overrides resulted in negative 7-day ROI.",
+      "trigger": "Trigger Postmortem"
+    },
+    "log": {
+      "title": "Manual Override Log",
+      "last_30": "Last 30 Days",
+      "reason": "Reason",
+      "scope": "Scope",
+      "score_before": "Score Before",
+      "score_after": "Score After",
+      "effect_7d": "7-Day Effect",
+      "effect_14d": "14-Day Effect"
+    }
+  },
+  "legal": {
+    "title": "Legal Center",
+    "subtitle": "Manage legal documents and version history",
+    "new_doc": "New Document",
+    "tabs": {
+      "documents": "Documents",
+      "editor": "Editor",
+      "history": "Version History"
+    },
+    "table": {
+      "type": "Document Type",
+      "version": "Version",
+      "effective_date": "Effective Date",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "editor": {
+      "editing": "Editing Draft",
+      "preview": "Preview",
+      "publish": "Publish Version"
+    },
+    "history": {
+      "title": "Version History"
+    }
+  },
+  "consent": {
+    "title": "Consent Management",
+    "subtitle": "Configure cookie rules and regional policies",
+    "export": "Export Logs",
+    "rules": {
+      "title": "Consent Rules",
+      "necessary": "Necessary",
+      "necessary_desc": "Required for core site functionality.",
+      "always_on": "Always On",
+      "analytics": "Analytics",
+      "analytics_desc": "Used for tracking performance.",
+      "marketing": "Marketing",
+      "marketing_desc": "Used for targeted advertising."
+    },
+    "regional": {
+      "title": "Regional Policies",
+      "eu": "EU / UK (GDPR)",
+      "opt_in": "Opt-In",
+      "ca": "California (CCPA)",
+      "opt_out": "Opt-Out",
+      "row": "Rest of World",
+      "implied": "Implied Consent"
+    }
+  }
+}

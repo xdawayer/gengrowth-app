@@ -1,0 +1,860 @@
+{
+  "common": {
+    "dashboard": "仪表盘",
+    "products": "产品管理",
+    "connections": "数据连接",
+    "discovery": "机会发现",
+    "strategy": "策略管理",
+    "backlog": "执行队列",
+    "execution": "执行管理",
+    "measurement": "测量归因",
+    "optimization": "优化决策",
+    "governance": "治理中心",
+    "playbook": "知识库",
+    "outreach": "外链管理",
+    "integrations": "集成中心",
+    "publish_queue": "发布队列",
+    "compliance": "合规风控",
+    "data_integrity": "数据完整性",
+    "legal_center": "法务中心",
+    "consent_center": "同意管理",
+    "settings": "设置",
+    "new_product": "新建产品",
+    "cancel": "取消",
+    "continue": "继续",
+    "back": "返回",
+    "create": "创建产品",
+    "loading": "加载中...",
+    "closing_soon": "正在返回列表...",
+    "under_construction": "开发中",
+    "coming_soon": "{{tab}} 模块将在下一个 MVP 迭代中上线。",
+    "groups": {
+      "overview": "概览",
+      "product": "产品",
+      "growth_engine": "增长引擎",
+      "measurement": "度量",
+      "governance": "治理",
+      "channels": "渠道",
+      "compliance": "合规",
+      "legal": "法务"
+    }
+  },
+  "connections": {
+    "title": "数据连接",
+    "subtitle": "管理 {{product}} 的数据源",
+    "add_connection": "添加连接",
+    "authenticating": "正在认证...",
+    "last_sync": "最后同步",
+    "healthy": "健康",
+    "action_required": "需要操作",
+    "error": "错误",
+    "settings": "设置",
+    "disconnect": "断开连接",
+    "integrity_check": "数据完整性检查",
+    "run_check": "运行检查",
+    "running_check": "正在检查...",
+    "api_status": "API 状态",
+    "data_latency": "数据延迟",
+    "integrity_rate": "完整性率",
+    "attribution": "归因可用性",
+    "alive": "存活",
+    "available": "可用",
+    "unavailable": "不可用",
+    "connection_error": "连接错误",
+    "oauth_expired_desc": "OAuth 令牌已过期。请重新认证以恢复数据流。",
+    "fix_now": "立即修复",
+    "disconnect_dialog": {
+      "title": "断开数据源",
+      "description": "您确定要断开 {{source}} 的连接吗？这将停止该产品的数据同步。",
+      "confirm": "断开连接"
+    },
+    "wizard": {
+      "title": "添加新连接",
+      "step_1": "选择数据源",
+      "step_2": "OAuth 授权",
+      "step_3": "验证连接",
+      "gsc_desc": "搜索表现（曝光、点击、查询词、落地页）",
+      "ga4_desc": "站内事件、用户行为、转化数据",
+      "authorize": "通过 Google 授权",
+      "verifying": "正在验证连接...",
+      "success": "连接成功",
+      "success_desc": "数据流已建立，初始同步正在开始。",
+      "failure": "连接失败",
+      "failure_desc": "无法建立与数据源的连接。请检查您的凭据并重试。",
+      "retry": "重试"
+    },
+    "fix_suggestions": {
+      "title": "修复建议",
+      "step_1": "检查 Google Cloud 项目权限",
+      "step_2": "验证 OAuth 重定向 URI",
+      "step_3": "使用下方按钮重新认证"
+    }
+  },
+  "dashboard": {
+    "active_products": "活跃产品",
+    "pending_strategies": "待审批策略",
+    "completed_executions": "已完成执行",
+    "total_opportunities": "总增长机会",
+    "recent_decisions": "最近决策",
+    "risk_alerts": "风险预警",
+    "view_all": "查看全部",
+    "trends": {
+      "this_week": "本周 +2",
+      "growth": "+12%"
+    },
+    "title": "仪表盘",
+    "subtitle": "增长引擎全局视图",
+    "refresh_data": "刷新数据",
+    "approved_strategies": "已批准策略",
+    "active_strategies": "活跃策略",
+    "performance_overview": "性能概览",
+    "last_3_months": "过去 3 个月",
+    "automated_decisions": "自动决策",
+    "optimization_center": "优化中心",
+    "portfolio_health": "投资组合健康度",
+    "columns": {
+      "strategy_name": "策略名称",
+      "score": "评分",
+      "status": "状态",
+      "last_decision": "最新决策"
+    },
+    "alerts": {
+      "alert1": {
+        "title": "数据连接失败",
+        "description": "产品 \"AstroGrowth\" 失去了与 Google Search Console 的连接。",
+        "action": "修复连接"
+      },
+      "alert2": {
+        "title": "合规警告",
+        "description": "3 个外联链接正在等待 GDPR 合规的法律审查。",
+        "action": "审查链接"
+      },
+      "alert3": {
+        "title": "发现新机会",
+        "description": "AI 发现了“星座兼容性”的高潜力关键词缺口。",
+        "action": "查看机会"
+      }
+    },
+    "strategies": {
+      "strat1": {
+        "name": "SEO 内容扩展",
+        "decision": "扩展"
+      },
+      "strat2": {
+        "name": "外链拓展",
+        "decision": "迭代"
+      },
+      "strat3": {
+        "name": "技术债务清理",
+        "decision": "暂停"
+      },
+      "strat4": {
+        "name": "社交信号提升",
+        "decision": "修复"
+      }
+    },
+    "decisions": {
+      "dec1": {
+        "label": "预算增加",
+        "description": "将表现良好的 SEO 内容预算增加了 20%。"
+      },
+      "dec2": {
+        "label": "策略迭代",
+        "description": "根据新的发现数据更新了外链拓展的关键词。"
+      },
+      "dec3": {
+        "label": "执行暂停",
+        "description": "由于部署错误率高，暂停了技术债务清理。"
+      }
+    }
+  },
+  "products": {
+    "title": "产品管理",
+    "subtitle": "管理您的增长实验和数据源。",
+    "no_products": "暂无产品，请先添加您的第一个产品。",
+    "search_placeholder": "按名称或 URL 搜索产品...",
+    "connections": "个连接",
+    "add_product": "添加产品",
+    "delete_title": "删除产品",
+    "delete_desc": "您确定要删除此产品吗？此操作将归档该产品并停止所有活跃策略。此操作无法撤销。",
+    "delete_confirm": "删除产品",
+    "clone_template": "克隆模板",
+    "edit_config": "编辑配置",
+    "input_profile": "输入配置 (Input Profile)",
+    "target_regions": "目标地区",
+    "experiment_goal": "实验目标",
+    "conversion_event": "转化事件",
+    "language_override": "语言覆盖",
+    "production_cap": "产能上限",
+    "brand_safety": "品牌安全策略",
+    "auto_detect": "自动检测",
+    "auto": "自动",
+    "pages_week": "页/周",
+    "default_policy": "默认策略",
+    "site_probe_results": "站点自动探测结果",
+    "connection_status": "连接状态",
+    "probe_summary": "探测摘要",
+    "completion_rate": "完成率",
+    "probe_desc": "站点结构识别为电商 / SaaS 混合型。检测到 {{count}} 个不同的页面模板。",
+    "modal": {
+      "title_step_1_4": "连接新产品",
+      "title_step_5": "站点自动探测",
+      "title_step_6": "探测结果",
+      "subtitle_step_1_4": "第 {{step}} 步，共 4 步 • 输入配置",
+      "subtitle_step_5": "分析站点结构",
+      "subtitle_step_6": "检查与确认",
+      "name_label": "产品名称",
+      "name_placeholder": "例如：我的 SaaS 产品",
+      "url_label": "产品 URL",
+      "url_placeholder": "https://example.com",
+      "regions_label": "目标地区",
+      "goal_label": "实验目标",
+      "event_label": "主转化事件",
+      "probing_title": "正在探测站点结构...",
+      "probing_desc": "我们正在自动检测您的站点地图、robots.txt 和页面模板，以构建您的增长模型。",
+      "reading_robots": "正在读取 robots.txt...",
+      "sitemap_found": "找到站点地图：/sitemap.xml",
+      "identifying_pages": "正在识别页面模板...",
+      "probe_success": "探测成功完成",
+      "probe_success_desc": "检测到英语语言，124 个页面，以及 3 个主要模板（产品、博客、文档）。",
+      "optional_overrides": "可选覆盖项",
+      "language": "语言",
+      "production_cap": "产能上限",
+      "brand_safety_policy": "品牌合规策略",
+      "brand_safety_placeholder": "应用默认策略...",
+      "cancel": "取消",
+      "back": "返回",
+      "continue": "继续",
+      "start_probe": "开始探测",
+      "confirm_connect": "确认并连接",
+      "auto_detect_en": "自动检测 (英文)",
+      "english": "英语",
+      "chinese": "中文",
+      "spanish": "西班牙语"
+    },
+    "columns": {
+      "product_name": "产品名称",
+      "status": "状态",
+      "connections": "连接数",
+      "created": "创建时间"
+    },
+    "details": {
+      "probe_steps": {
+        "sitemap_label": "站点地图发现",
+        "sitemap_found": "已找到",
+        "sitemap_not_found": "未找到",
+        "sitemap_desc": "检查 /sitemap.xml 和 robots.txt 引用。",
+        "page_type_label": "页面类型识别",
+        "page_type_desc": "分析 DOM 结构以识别产品、类别和博客页面。",
+        "language_label": "语言检测",
+        "language_unknown": "未知",
+        "language_desc": "通过元标签和 NLP 检测主要内容语言。"
+      }
+    },
+    "actions": {
+      "add_product": "添加产品",
+      "view_details": "查看详情",
+      "copy_template": "复制模板",
+      "delete_product": "删除产品"
+    },
+    "delete_dialog": {
+      "title": "删除产品",
+      "description": "您确定要删除此产品吗？此操作将归档该产品并停止所有活动的策略。此操作无法撤销。",
+      "confirm": "删除产品"
+    }
+  },
+  "playbook": {
+    "title": "剧本与模式",
+    "subtitle": "经过验证的 SEO 策略和反模式",
+    "filter": "高级筛选",
+    "search": "搜索剧本...",
+    "tabs": {
+      "all": "所有模式",
+      "success": "成功模式",
+      "failure": "反模式"
+    },
+    "steps": "步骤",
+    "effect": "效果",
+    "scope": "适用范围",
+    "source": "来源策略",
+    "reuse": "复用模式",
+    "mark_anti": "标记为反模式",
+    "types": {
+      "success_pattern": "成功模式",
+      "failure_pattern": "失败模式"
+    }
+  },
+  "outreach": {
+    "title": "外链管理",
+    "subtitle": "管理外链候选发现、质量评分、外联任务和验链状态",
+    "manual_check": "手动验链",
+    "batch_verify": "批量验链",
+    "warning": "默认遵循搜索引擎垃圾链接政策，禁止高风险批量建链策略。风险过高的候选自动降级或阻断。外联草稿中禁止承诺交换链接、付费购买等违规行为。",
+    "tabs": {
+      "candidates": "候选池",
+      "tasks": "外联任务",
+      "monitoring": "验链状态",
+      "lost_alerts": "失效告警"
+    },
+    "table": {
+      "domain_type": "候选域名 / 类型",
+      "relevance": "相关性评分",
+      "quality": "质量评分",
+      "spam_risk": "垃圾风险",
+      "pos_score": "链接位置评分",
+      "stability": "历史稳定性",
+      "suggested_action": "建议动作",
+      "actions": "操作",
+      "candidate": "候选 ID",
+      "method": "发送方式",
+      "exchange": "价值交换",
+      "mark_sent": "标记已发送",
+      "draft": "生成草稿",
+      "domain_target": "域名 / 目标落地页",
+      "status": "状态",
+      "indexable": "可索引",
+      "rel_attr": "rel 属性",
+      "anchor_text": "锚文本",
+      "last_checked": "最后检查",
+      "live": "存活",
+      "lost": "失效",
+      "crawlable": "可抓取",
+      "target_indexable": "目标页可索引",
+      "view_details": "查看候选",
+      "draft_content": "草稿内容",
+      "reason": "原因",
+      "verify": "验证",
+      "target_url": "目标落地页"
+    },
+    "actions": {
+      "outreach": "外联",
+      "downgrade": "降级",
+      "block": "阻断"
+    },
+    "modal": {
+      "close": "关闭",
+      "cancel": "取消",
+      "save_to_tasks": "保存到任务",
+      "subject": "邮件主题",
+      "message_body": "正文内容",
+      "candidate_not_found": "未找到候选详情。",
+      "draft_saved": "草稿已保存到任务！",
+      "collab_inquiry": "合作咨询",
+      "draft_template": "你好，{{domain}} 团队：\n\n我阅读了你们最近的文章，非常喜欢你们的内容，特别是 {{targetUrl}} 上的资源页面。\n\n我是来自 {{productName}} 的代表。我们有一些高度相关的资源，相信会是你们页面的一个很好的补充，并能为你们的读者提供价值。\n\n不知道你们是否愿意就潜在的合作进行简短的交流？\n\n顺祝商祺，\n[你的名字]"
+    }
+  },
+  "publish_queue": {
+    "title": "发布队列",
+    "subtitle": "管理和安排跨平台内容",
+    "settings": "设置",
+    "tabs": {
+      "queue": "队列",
+      "blocked": "已拦截",
+      "logs": "日志"
+    },
+    "table": {
+      "content": "内容摘要",
+      "target": "目标",
+      "level_risk": "级别 / 风险",
+      "schedule": "计划",
+      "actions": "操作",
+      "platform": "平台",
+      "approval": "审批",
+      "time_hash": "时间 / 哈希",
+      "response": "响应"
+    },
+    "actions": {
+      "reject": "拒绝",
+      "approve": "批准",
+      "view_fix": "查看并修复"
+    },
+    "reason": "原因"
+  },
+  "website": {
+    "title": "官网后台管理",
+    "subtitle": "管理官网结构配置、导航、Footer 和页面发布状态",
+    "tabs": {
+      "pages": "页面列表",
+      "navigation": "导航配置",
+      "footer": "Footer 配置"
+    },
+    "preview": "预览网站",
+    "pages_table": {
+      "title": "页面标题",
+      "path": "路径",
+      "type": "类型",
+      "status": "状态",
+      "last_updated": "最后更新"
+    },
+    "nav_header": "Header 导航",
+    "add_link": "添加链接",
+    "footer_legal": "法务链接",
+    "footer_contact": "联系与社媒",
+    "save": "保存更改"
+  },
+  "compliance": {
+    "title": "合规与风险",
+    "subtitle": "自动内容风险检查和审批",
+    "batch_check": "批量检查",
+    "tabs": {
+      "overview": "风险概览",
+      "checklists": "检查清单",
+      "blocked": "已拦截记录"
+    },
+    "overview": {
+      "high_risk": "高风险",
+      "high_risk_desc": "自动拦截。需要所有者审批。",
+      "medium_risk": "中风险",
+      "medium_risk_desc": "已警报。需要 PM 确认。",
+      "low_risk": "低风险",
+      "low_risk_desc": "已记录。无需操作。"
+    },
+    "table": {
+      "id_target": "ID / 目标",
+      "check_type": "检查类型",
+      "risk_level": "风险等级",
+      "status": "状态",
+      "actions": "操作"
+    },
+    "actions": {
+      "approve": "审批 (所有者)",
+      "confirm": "确认 (PM)",
+      "view_details": "查看详情"
+    }
+  },
+  "data_integrity": {
+    "title": "数据完整性",
+    "subtitle": "数据定义、收集、交付和对账的自动验收",
+    "trigger": "触发验收",
+    "tabs": {
+      "overview": "概览",
+      "auto": "自动结果",
+      "manual": "人工审核"
+    },
+    "overview": {
+      "status_review": "状态：需要审核",
+      "status_desc": "允许有限执行。由于管道警告，自动扩展已禁用。",
+      "dimensions": {
+        "schema": "模式",
+        "coverage": "覆盖率",
+        "pipeline": "管道",
+        "reconciliation": "对账",
+        "attribution": "归因",
+        "consent": "同意"
+      }
+    },
+    "auto": {
+      "validation": "{{name}} 验证"
+    },
+    "manual": {
+      "fallback": "管道回退",
+      "task": "任务",
+      "issue": "端到端交付率降至 99% 以下",
+      "desc": "需要分析师执行样本回放和日志验证。",
+      "claim": "认领任务 (分析师)",
+      "conditional": "有条件批准 (PM/所有者)"
+    },
+    "status": {
+      "accept": "接受",
+      "review": "审核",
+      "reject": "拒绝"
+    }
+  },
+  "legal_center": {
+    "title": "法务中心",
+    "subtitle": "管理法务文档的 CRUD 与版本历史",
+    "tabs": {
+      "documents": "文档列表",
+      "editor": "编辑器",
+      "history": "版本历史"
+    },
+    "new_doc": "新建文档",
+    "table": {
+      "type": "文档类型",
+      "version": "版本",
+      "date": "生效日期",
+      "status": "状态",
+      "actions": "操作"
+    }
+  },
+  "consent_center": {
+    "title": "同意管理中心",
+    "subtitle": "配置同意规则、管理地区策略",
+    "export": "导出日志",
+    "rules": "同意规则",
+    "regions": "地区策略"
+  },
+  "integrations": {
+    "title": "集成与 OAuth",
+    "subtitle": "以最小权限管理安全连接",
+    "new_connection": "新建连接",
+    "granted_scopes": "已授予的权限",
+    "encrypted": "在保管库中加密",
+    "last_used": "最后使用"
+  },
+  "execution": {
+    "title": "执行管理",
+    "subtitle": "跟踪 SEO 和社媒执行进度",
+    "pause_all": "全部暂停",
+    "resume_all": "全部恢复",
+    "tabs": {
+      "seo": "SEO 日志",
+      "social": "社媒日志",
+      "exceptions": "异常记录"
+    },
+    "seo_table": {
+      "task": "任务 ID / 标题",
+      "status": "状态",
+      "duration": "耗时",
+      "output": "输出",
+      "indexed": "已索引",
+      "internal_links": "内链",
+      "sitemap": "站点地图",
+      "actions": "操作"
+    },
+    "social_table": {
+      "task": "任务 ID / 平台",
+      "type": "类型",
+      "status": "状态",
+      "impressions": "曝光",
+      "clicks": "点击",
+      "ctr": "点击率",
+      "utm": "UTM / 信号",
+      "actions": "操作"
+    },
+    "exceptions_table": {
+      "id": "异常 ID / 任务",
+      "type": "类型",
+      "message": "信息",
+      "retries": "重试次数",
+      "status": "状态",
+      "actions": "操作"
+    },
+    "actions": {
+      "view": "查看",
+      "retry": "重试",
+      "escalate": "升级",
+      "resolve": "解决"
+    }
+  },
+  "backlog": {
+    "title": "执行队列",
+    "subtitle": "{{product}} 的批处理任务队列",
+    "filter": "筛选",
+    "approve_batch": "批准当前批次",
+    "social_probe": {
+      "title": "社媒优先探测活跃中",
+      "status": "监控中",
+      "active_probes": "活跃探测",
+      "top_signal": "最高信号 (Reddit)",
+      "baseline": "基线",
+      "promoted": "主题已晋升至 Batch-0"
+    },
+    "batch": {
+      "highest_priority": "最高优先级",
+      "tasks": "任务",
+      "priority": "优先级",
+      "dep": "依赖",
+      "expected": "预期输出",
+      "override": "覆盖优先级"
+    }
+  },
+  "discovery": {
+    "title": "机会发现",
+    "subtitle": "为 {{product}} 自动发现的增长机会",
+    "run_discovery": "触发发现",
+    "running_discovery": "正在发现...",
+    "export_csv": "导出 CSV",
+    "map_overview": "机会地图总览",
+    "list_title": "机会列表",
+    "history_title": "发现运行历史",
+    "types": {
+      "all": "所有类型",
+      "keyword": "关键词机会簇",
+      "competitor": "竞品占位",
+      "content": "内容空白",
+      "backlink": "外链机会"
+    },
+    "priorities": {
+      "all": "所有优先级",
+      "high": "高",
+      "medium": "中",
+      "low": "低"
+    },
+    "intents": {
+      "informational": "信息型",
+      "comparison": "比较型",
+      "transactional": "交易型",
+      "navigational": "导航型"
+    },
+    "fields": {
+      "volume": "搜索量/规模",
+      "cpc": "等效 CPC 节省",
+      "priority": "优先级",
+      "why": "为什么选择此机会？",
+      "evidence": "证据链"
+    },
+    "actions": {
+      "create_strategy": "生成策略"
+    },
+    "history": {
+      "trigger": "触发方式",
+      "opps_found": "发现机会数",
+      "scheduled": "计划任务",
+      "manual": "手动触发"
+    },
+    "evidence_steps": {
+      "data_source": "数据源",
+      "analysis": "分析",
+      "calculation": "计算"
+    },
+    "mock_data": {
+      "opp1": {
+        "title": "占星入门",
+        "why": "搜索量高且关键词难度低。当前排名第15位，进入前3名可带来1.5万新访客。",
+        "ev1": "Google Search Console (最近30天)",
+        "ev2": "识别出12个相关关键词簇，KD < 30",
+        "ev3": "预估流量 (15k) * 平均 CPC ($0.08) = $1,200 价值"
+      },
+      "opp2": {
+        "title": "astro-charts.com 重合度",
+        "why": "竞品在“星盘计算器”变体词上获取了流量，而我们没有专门的落地页。",
+        "ev1": "Ahrefs 竞品分析 API",
+        "ev2": "发现45个高价值关键词，竞品排名前5，我们排名 > 50",
+        "ev3": "预计获取 10% 的差距流量"
+      },
+      "opp3": {
+        "title": "十二星座兼容性指南",
+        "why": "缺失主要主题集群的支柱内容。内部链接和主题权威性的潜力巨大。",
+        "ev1": "站点结构分析",
+        "ev2": "竞品内容审计",
+        "ev3": "搜索意图映射"
+      },
+      "opp4": {
+        "title": "未链接的品牌提及",
+        "why": "高权重网站提及了我们但未提供链接。获取这些链接的成本极低且效果显著。",
+        "ev1": "品牌监控 API",
+        "ev2": "域名权重过滤",
+        "ev3": "外联可行性检查"
+      }
+    }
+  },
+  "strategy": {
+    "title": "策略组合",
+    "subtitle": "AI 生成的待审批增长策略",
+    "history": "版本历史",
+    "compare": "对比已选",
+    "top_recommended": "首选推荐",
+    "conflict": "资源冲突",
+    "score": "评分",
+    "confidence": "置信度",
+    "target": "目标",
+    "override": "覆盖",
+    "approve": "批准",
+    "approving": "批准中...",
+    "roi": "等效 ROI (月)",
+    "impact": "影响范围",
+    "cost": "成本预估",
+    "risk": "风险等级",
+    "breakdown": "评分明细",
+    "roi_potential": "ROI 潜力",
+    "hist_success": "历史成功率",
+    "comp_gap": "竞争差距",
+    "tech_health": "技术健康度",
+    "risk_inv": "风险 (反向)",
+    "why": "为什么选择此策略？",
+    "evidence": {
+      "discovery": "发现",
+      "competitor_analysis": "竞品分析",
+      "resource_check": "资源检查",
+      "roi_projection": "ROI 预测",
+      "audit": "审计",
+      "impact_analysis": "影响分析",
+      "link_intersect": "外链交集",
+      "prospecting": "潜在客户挖掘",
+      "ev_1_1": "发现“兼容性”主题存在每月 12 万的搜索量缺口。",
+      "ev_1_2": "排名前三的竞品在这些主题上的内容较薄弱（少于 800 字）。",
+      "ev_1_3": "当前团队产能允许每周产出 5 篇核心文章。",
+      "ev_1_4": "预计 1.5 万新访客 * 0.30 美元 CPC = 每月 4,500 美元价值。",
+      "ev_2_1": "移动端产品页面的 LCP 为 4.2 秒（未通过核心网页指标）。",
+      "ev_2_2": "未通过 CWV 的页面跳出率高出 15%。",
+      "ev_2_3": "将 LCP 提升至 2.5 秒以内预计可提升 0.5% 的转化率。",
+      "ev_3_1": "发现 45 个域名链接到竞品但未链接到我们。",
+      "ev_3_2": "筛选出 DR 大于 50 且包含相关“工具”资源页面的网站。",
+      "ev_3_3": "获取 5 个外链预计可将核心排名提升 2 个位置。"
+    },
+    "override_reason_prompt": "请提供覆盖此策略优先级的理由：",
+    "override_applied": "覆盖应用成功。",
+    "compare_strategies": "请选择 2-3 个策略进行对比。",
+    "compare_limit": "最多只能选择 3 个策略进行对比。",
+    "view_history": "查看策略组合历史。",
+    "insufficient_candidates": "可用候选少于 3 个。显示现有候选。",
+    "conflict_warning": "检测到资源冲突。请选择一个策略继续。",
+    "approved": "已批准",
+    "names": {
+      "strat_1": "SEO 内容扩展：星座兼容性",
+      "strat_2": "技术债务：核心网页指标优化",
+      "strat_3": "外链拓展：占星工具"
+    },
+    "impacts": {
+      "imp_1": "自然流量 (+15%)",
+      "imp_2": "转化率 (+0.5%)",
+      "imp_3": "域名权重 (+2)",
+      "imp_4": "品牌知名度 (+10%)",
+      "imp_5": "用户留存 (+5%)"
+    },
+    "conflicts": {
+      "outreach_budget": "与 Campaign B 竞争外联预算。两者都需要高权重的站点投放。"
+    },
+    "costs": {
+      "cost_1": "2 名作者，1 名编辑",
+      "cost_2": "1 名开发人员（2 个冲刺）",
+      "cost_3": "1 名外联专员"
+    },
+    "risks": {
+      "Low": "低",
+      "Medium": "中",
+      "High": "高"
+    },
+    "compare_title": "策略对比",
+    "close_compare": "关闭"
+  },
+  "measurement": {
+    "title": "衡量与归因",
+    "subtitle": "统一的归因和实验评估",
+    "export": "导出数据",
+    "health": {
+      "title": "渠道隔离健康度",
+      "desc": "监控 UTM 完整性和跨渠道冲突",
+      "utm": "UTM 完整性",
+      "conflict": "冲突率",
+      "valid": "隔离有效性"
+    },
+    "dashboard": {
+      "channel": "渠道",
+      "content": "内容",
+      "page": "页面",
+      "last_30": "过去 30 天",
+      "viz_title": "{{dimension}} 维度可视化",
+      "viz_desc": "流量、转化和 ROI 细分"
+    },
+    "reviews": {
+      "title": "衡量评估",
+      "strategy": "策略",
+      "confidence": "置信度",
+      "target": "目标",
+      "actual": "实际",
+      "utm_match": "UTM 匹配度",
+      "postmortem": "查看复盘",
+      "status": {
+        "achieved": "已达成",
+        "failed": "失败",
+        "insufficient": "数据不足"
+      }
+    }
+  },
+  "optimization": {
+    "title": "优化决策",
+    "subtitle": "{{product}} 的 AI 驱动策略调整",
+    "guided_ops": {
+      "enter": "进入引导操作",
+      "exit": "退出引导操作",
+      "mode": "引导操作模式",
+      "goal": "1. 本周目标",
+      "goal_value": "最大化自然流量",
+      "trajectory": "当前轨迹: +12% (目标: +15%)",
+      "actions": "2. 推荐操作",
+      "expand": "扩展",
+      "expand_desc": "高 ROI。从 STR-78 转移资源。",
+      "pause": "暂停",
+      "pause_desc": "连续 2 周表现不佳。",
+      "execute": "3. 执行与评估",
+      "one_click": "一键执行",
+      "auto_postmortem": "自动复盘已安排在下个周期。"
+    },
+    "decision": {
+      "override": "覆盖",
+      "confirm": "确认",
+      "current_score": "当前评分",
+      "view_trend": "查看趋势",
+      "threshold": "阈值匹配",
+      "window": "连续窗口",
+      "reallocation": "资源重新分配",
+      "reasoning": "推理"
+    },
+    "types": {
+      "expand": "扩展",
+      "iterate": "迭代",
+      "pause": "暂停"
+    }
+  },
+  "governance": {
+    "title": "治理中心",
+    "subtitle": "审计日志、审批和干预跟踪",
+    "compare": "版本对比",
+    "alert": {
+      "title": "干预警报",
+      "desc": "连续 3 次手动覆盖导致 7 天 ROI 为负。",
+      "trigger": "触发复盘"
+    },
+    "log": {
+      "title": "手动覆盖日志",
+      "last_30": "过去 30 天",
+      "reason": "原因",
+      "scope": "范围",
+      "score_before": "覆盖前评分",
+      "score_after": "覆盖后评分",
+      "effect_7d": "7 天影响",
+      "effect_14d": "14 天影响"
+    }
+  },
+  "legal": {
+    "title": "法务中心",
+    "subtitle": "管理法律文档和版本历史",
+    "new_doc": "新建文档",
+    "tabs": {
+      "documents": "文档",
+      "editor": "编辑器",
+      "history": "版本历史"
+    },
+    "table": {
+      "type": "文档类型",
+      "version": "版本",
+      "effective_date": "生效日期",
+      "status": "状态",
+      "actions": "操作"
+    },
+    "editor": {
+      "editing": "正在编辑草稿",
+      "preview": "预览",
+      "publish": "发布版本"
+    },
+    "history": {
+      "title": "版本历史"
+    }
+  },
+  "consent": {
+    "title": "同意管理",
+    "subtitle": "配置 Cookie 规则和区域政策",
+    "export": "导出日志",
+    "rules": {
+      "title": "同意规则",
+      "necessary": "必要",
+      "necessary_desc": "核心网站功能所需。",
+      "always_on": "始终开启",
+      "analytics": "分析",
+      "analytics_desc": "用于跟踪性能。",
+      "marketing": "营销",
+      "marketing_desc": "用于定向广告。"
+    },
+    "regional": {
+      "title": "区域政策",
+      "eu": "欧盟 / 英国 (GDPR)",
+      "opt_in": "选择加入",
+      "ca": "加利福尼亚州 (CCPA)",
+      "opt_out": "选择退出",
+      "row": "世界其他地区",
+      "implied": "默示同意"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #ffffff;
+  --color-brand-bg-alt: #f8f9fa;
+  --color-brand-bg-light: #ffffff;
+  --color-brand-accent: #1a73e8;
+  --color-brand-accent-hover: #1765cc;
+  --color-brand-border: #dadce0;
+  --color-brand-success: #1e8e3e;
+  
+  --font-sans: "Roboto", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Google Sans", "Roboto", sans-serif;
+  --font-mono: "Roboto Mono", monospace;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Mono&display=swap');
+
+/* Mocking Google Sans with a similar feel if not available */
+@font-face {
+  font-family: 'Google Sans';
+  src: local('Arial');
+  font-weight: 400;
+}
+
+body {
+  @apply bg-brand-bg text-zinc-900;
+  font-family: var(--font-sans);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  @apply text-zinc-800;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #dadce0;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #bdc1c6;
+}
